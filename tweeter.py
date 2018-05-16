@@ -11,4 +11,4 @@ auth.set_access_token(cred_json['access_token'], cred_json['access_token_secret'
 api = tweepy.API(auth)
 
 def post_tweet(text):
-	api.update_status(text)
+    api.update_status(text)
