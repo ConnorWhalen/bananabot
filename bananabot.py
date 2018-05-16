@@ -6,7 +6,8 @@ from random import randint
 
 import tweeter
 
-logging.basicConfig(level='INFO', filename='bananabot.log')
+logging.basicConfig(level='INFO', filename='bananabot.log',
+					format='%(asctime)s;%(levelname)s;%(message)s')
 logger = logging.getLogger(__name__)
 
 def bananabot():
@@ -59,11 +60,9 @@ def bananabot():
 	logger.info("Full message:")
 	logger.info(message)
 
-	# tweeter.post_tweet(quote_replaced)
+	# tweeter.post_tweet(message)
 
-	# logger.info('')
 	# logger.info('Quote tweeted successfully!')
-	# logger.info('')
 
 try:
 	bananabot()
